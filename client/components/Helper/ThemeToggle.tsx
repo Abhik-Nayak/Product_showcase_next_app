@@ -1,24 +1,29 @@
 "use client"
 import { useTheme } from 'next-themes';
 import React, { useEffect, useState } from 'react'
+import { BiMoon, BiSun } from 'react-icons/bi';
 
 type Props = {}
 
 const ThemeToggle = (props: Props) => {
-    const [mounted, setMounted] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
-    const {theme, setTheme, systemTheme} = useTheme();
+  const { theme, setTheme, systemTheme } = useTheme();
 
-    useEffect(()=>{
-        setMounted(true);
-    },[]);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
-    if(!mounted) return null;
-    
-    const currentTheme = theme === 'system' ? systemTheme : theme;
-    
+  if (!mounted) return null;
+
+  const currentTheme = theme === 'system' ? systemTheme : theme;
+
   return (
-    <div>ThemeToggle</div>
+    <button onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")} className='p-2 transition'>
+      {currentTheme === "dark" ? (
+        <BiSun className='text-white w-8 h-8 cursor-pointer' />
+      ) : (<BiMoon className='text-white w-8 h-8 cursor-pointer' />)}
+    </button>
   )
 }
 
