@@ -19,7 +19,7 @@ const Nav = ({ openNav }: Props) => {
         window.addEventListener("scroll", handler)
     }, [])
     return (
-        <div className={`transition-all ${navBg ? 'bg-[#578FCA] shadow-md' : 'fixed'} duration-200 h-[12vh] z-[100] fixed w-full `}>
+        <div className={`transition-all ${navBg ? 'bg-[#3674B5] dark:bg-[#402E7A] shadow-md' : 'fixed'} duration-200 h-[12vh] z-[100] fixed w-full `}>
             <div className='flex items-center h-full justify-between sm:w-[80%] w-[90%] mx-auto'>
                 <div className='text-white font-bold text-2xl sm:text-3xl'>Logo</div>
                 {/* Navlink */}
