@@ -1,3 +1,4 @@
+import ThemeToggle from '@/components/Helper/ThemeToggle'
 import { navLinks } from '@/constant/constant'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
@@ -18,7 +19,7 @@ const Nav = ({ openNav }: Props) => {
         window.addEventListener("scroll", handler)
     }, [])
     return (
-        <div className={`transition-all ${navBg ? 'bg-[#578FCA] shadow-md' : 'fixed bg-[#3674BF]'} duration-200 h-[12vh] z-[100] fixed w-full `}>
+        <div className={`transition-all ${navBg ? 'bg-[#578FCA] shadow-md' : 'fixed'} duration-200 h-[12vh] z-[100] fixed w-full `}>
             <div className='flex items-center h-full justify-between sm:w-[80%] w-[90%] mx-auto'>
                 <div className='text-white font-bold text-2xl sm:text-3xl'>Logo</div>
                 {/* Navlink */}
@@ -48,6 +49,9 @@ const Nav = ({ openNav }: Props) => {
                     </a>
 
                     {/* theme switch button */}
+                    <ThemeToggle/>
+
+                    {/* Burger menu */}
                     <HiBars3BottomRight className='w-8 h-8 cursor-pointer text-white lg:hidden' onClick={openNav} />
                 </div>
 
