@@ -5,7 +5,7 @@ type Props = {}
 
 const Hero = (props: Props) => {
     return (
-        <div className='relative w-full h-screen flex justify-center flex-col bg-[#3674B5] dark:bg-[#402E7A] bg_clip'>
+        <div className='relative w-full h-screen flex justify-center flex-col bg-[#3674B5] bg_clip'>
             <div className='w-[90%] md:w-[80%] mx-auto items-center grid grid-cols-1 xl:grid-cols-2 gap-10'>
                 {/* Text content */}
                 <div>
@@ -45,7 +45,7 @@ const Hero = (props: Props) => {
 
                 {/* image content */}
                 <div className='mx-auto hidden xl:block'>
-                    <Image src="/images/product2.png" alt="Image" width={670} height={670} />
+                    <Image src="/images/product2.png" alt="Image" width={680} height={680} />
                 </div>
             </div>
         </div>
