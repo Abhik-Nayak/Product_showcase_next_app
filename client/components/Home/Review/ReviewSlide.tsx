@@ -3,6 +3,7 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import ReviewCard from "./ReviewCard";
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -40,10 +41,9 @@ const ReviewSlide = (props: Props) => {
         keyBoardControl={true}
 
       >
-        <div>Item 1</div>
-        <div>Item 2</div>
-        <div>Item 3</div>
-        <div>Item 4</div>
+        <ReviewCard image="/images/c1.png" name="John Doe" role="Founder Roitech" />
+        <ReviewCard image="/images/c2.png" name="Chris Evans" role="Tech enterpeneur" />
+        <ReviewCard image="/images/c3.png" name="Jenifer Murtingo" role="CEO" />
       </Carousel>
     </div>
   );

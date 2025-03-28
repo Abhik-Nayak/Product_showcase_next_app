@@ -5,7 +5,7 @@ type Props = {}
 
 const Review = (props: Props) => {
   return (
-    <div className='pt-0 pb-0'>
+    <div className='pt-0 pb-30'>
       <h1 className='text-2xl sm:text-3xl text-center text-gray-900 dark:text-white font-bold'>
         30k+ Customer&apos;s Trust Us
       </h1>
