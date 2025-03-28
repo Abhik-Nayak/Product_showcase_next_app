@@ -1,9 +1,8 @@
 import React from 'react'
 import ReviewSlide from './ReviewSlide'
 
-type Props = {}
 
-const Review = (props: Props) => {
+const Review = () => {
   return (
     <div className='pt-0 pb-30'>
       <h1 className='text-2xl sm:text-3xl text-center text-gray-900 dark:text-white font-bold'>

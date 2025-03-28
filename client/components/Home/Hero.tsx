@@ -1,9 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
 
-type Props = {}
 
-const Hero = (props: Props) => {
+const Hero = () => {
     return (
         <div className='relative w-full h-screen flex justify-center flex-col bg-[#3674B5] dark:bg-[#402E7A] bg_clip'>
             <div className='w-[90%] md:w-[80%] mx-auto items-center grid grid-cols-1 xl:grid-cols-2 gap-10'>

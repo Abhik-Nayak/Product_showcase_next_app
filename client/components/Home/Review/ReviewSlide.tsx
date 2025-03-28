@@ -28,9 +28,8 @@ const responsive = {
   },
 };
 
-type Props = {};
 
-const ReviewSlide = (props: Props) => {
+const ReviewSlide = () => {
   return (
     <div>
       <Carousel

@@ -4,9 +4,7 @@ import React, { useState } from 'react'
 import Nav from './Nav'
 import MobileNav from './MobileNav'
 
-type Props = {}
-
-const ResponsiveNav = (props: Props) => {
+const ResponsiveNav = () => {
   const [openSidebar,setOpensidebar] = useState<boolean>(false);
   const showNav=()=>setOpensidebar(true);
   const hideNav=()=>setOpensidebar(false);

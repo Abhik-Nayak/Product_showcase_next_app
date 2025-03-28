@@ -3,9 +3,8 @@ import { useTheme } from 'next-themes';
 import React, { useEffect, useState } from 'react'
 import { BiMoon, BiSun } from 'react-icons/bi';
 
-type Props = {}
 
-const ThemeToggle = (props: Props) => {
+const ThemeToggle = () => {
   const [mounted, setMounted] = useState(false);
 
   const { theme, setTheme, systemTheme } = useTheme();

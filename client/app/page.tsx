@@ -1,9 +1,7 @@
 import Home from '@/components/Home/Home'
 import React from 'react'
 
-type Props = {}
-
-const HomePage = (props: Props) => {
+const HomePage = () => {
   return (
     <Home/>
   )

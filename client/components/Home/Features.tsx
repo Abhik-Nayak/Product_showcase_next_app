@@ -4,7 +4,6 @@ import { HiOutlineChat } from "react-icons/hi";
 import { IoAppsOutline, IoWifiOutline } from "react-icons/io5";
 import { MdNotifications, MdOutlineTouchApp } from "react-icons/md";
 
-type Props = {};
 
 const featureData = [
   {
@@ -45,7 +44,7 @@ const featureData = [
   },
 ];
 
-const Features = (props: Props) => {
+const Features = () => {
   return (
     <div className="pt-16 pb-16">
       <div className="w-[80%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
