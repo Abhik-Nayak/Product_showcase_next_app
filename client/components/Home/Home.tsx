@@ -4,7 +4,6 @@ import Features from "./Features";
 import About from "./About";
 import Review from "./Review/Review";
 import Contact from "./Contact";
-import Footer from "./Footer";
 
 const Home = () => {
   return (

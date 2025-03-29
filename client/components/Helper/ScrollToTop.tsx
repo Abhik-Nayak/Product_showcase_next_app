@@ -2,9 +2,8 @@
 import React, { useEffect, useState } from 'react'
 import { FaArrowUp } from 'react-icons/fa';
 
-type Props = {}
 
-const ScrollToTop = (props: Props) => {
+const ScrollToTop = () => {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(()=>{
