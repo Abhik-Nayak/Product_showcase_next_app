@@ -15,7 +15,6 @@ const Home = () => {
       <About imageOrder="lg:order-2" textOrder="lg:order-1" title="Capture the moment" linkText="Shop Now" />
       <Review/>
       <Contact/>
-      <Footer/>
     </div>
   );
 };
